@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.vvg.java.vjezbe.controller.CasopisiUrediController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="10.0" prefWidth="210.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="227.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Naziv časopisa:" GridPane.halignment="CENTER" />
+            <Label text="Godina izdanja:" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label text="Mjesec izdanja:" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label text="Vrsta časopisa:" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label text="Broj stranica:" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#unesiCasopis" text="Unesi časopis" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <TextField fx:id="nazivCasopisa" prefHeight="25.0" prefWidth="191.0" GridPane.columnIndex="1" />
+            <TextField fx:id="godinaCasopisa" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="mjesecIzdavanja" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="brStranicaCasopisa" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="vrstaCasopisa" prefHeight="25.0" prefWidth="222.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
